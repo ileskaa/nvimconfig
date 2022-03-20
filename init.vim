@@ -4,6 +4,7 @@
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
+:set mouse=a
 " Stop highlighting matching parentheses or braces
 :let loaded_matchparen=1
 
@@ -29,9 +30,9 @@ nnoremap <F8> :TagbarToggle<CR>
 
 inoremap " ""<left>
 inoremap ' ''<left>
-inoremap ( ()
-inoremap [ []
-inoremap { {}
-inoremap < <>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap < <><left>
 " <CR> stands for carriage return which is equivalent to pressing enter
 inoremap {<CR> {<CR>}<ESC>O
